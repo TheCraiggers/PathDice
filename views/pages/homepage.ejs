@@ -1,0 +1,6 @@
+<div id="homepage" :class="[heroHeightSet ? '' : 'uninitialized']" v-cloak>
+  <div v-for="stat in stats">
+    {{stat.name}}:{{stat.value}}
+  </div>
+</div>
+<%- /* Expose locals as `window.SAILS_LOCALS` :: */ exposeLocalsToBrowser() %>
