@@ -1,28 +1,22 @@
 # dicepath
+An RPG-system agnostic online character sheet with bot integrations.
 
-a [Sails v1](https://sailsjs.com) application
+## How does this work?
+A dicepath character sheet is comprised of three main elements. Using these three things together, my hope is that anything can be recreated in any RPG system. But at least everything in the D&D style ones (U've obvously not played every RPG system out there.)
 
+### Stats
+These are the numbers that GMs and players usually care about the most. This will be things like HP, Armor Class, money, experience, etc. But it's not limited to just plain numbers. Things like conditions are also stats.
 
-### Links
+### Frobs
+These are controlable widgets that you see on screen. Buttons, slots for armor and spells, etc. These give players the ability to interact with their character sheet and are often the starting point for a modifier's logic. These will also be what gets mapped to your character's API that is exposed to dice bots.
 
-+ [Sails framework documentation](https://sailsjs.com/get-started)
-+ [Version notes / upgrading](https://sailsjs.com/documentation/upgrading)
-+ [Deployment tips](https://sailsjs.com/documentation/concepts/deployment)
-+ [Community support options](https://sailsjs.com/support)
-+ [Professional / enterprise options](https://sailsjs.com/enterprise)
+### Modifiers
+Modifiers are the things that modify the stats using a complex system called *math*. They can reference stats and frobs in their equations. They can also be paired with pieces of logic that can turn a modifier on and off.
 
+## Examples
+Just some examples / ideas to get the point across and to help me remember them.
 
-### Version info
-
-This app was originally generated on Sun Sep 08 2019 11:47:29 GMT-0400 (Eastern Daylight Time) using Sails v1.2.3.
-
-<!-- Internally, Sails used [`sails-generate@1.16.13`](https://github.com/balderdashy/sails-generate/tree/v1.16.13/lib/core-generators/new). -->
-
-
-This project's boilerplate is based on an expanded seed app provided by the [Sails core team](https://sailsjs.com/about) to make it easier for you to build on top of ready-made features like authentication, enrollment, email verification, and billing.  For more information, [drop us a line](https://sailsjs.com/support).
-
-
-<!--
-Note:  Generators are usually run using the globally-installed `sails` CLI (command-line interface).  This CLI version is _environment-specific_ rather than app-specific, thus over time, as a project's dependencies are upgraded or the project is worked on by different developers on different computers using different versions of Node.js, the Sails dependency in its package.json file may differ from the globally-installed Sails CLI release it was originally generated with.  (Be sure to always check out the relevant [upgrading guides](https://sailsjs.com/upgrading) before upgrading the version of Sails used by your app.  If you're stuck, [get help here](https://sailsjs.com/support).)
--->
-
+* An Attacked1, Attacked2, Attacked3 modifiers that lower your to-hit bonus in PF2e.
+* A frob to increase the round, which lowers the duration on various conditions.
+* A frob to enable/disable a Barbarian's rage.
+* A frob for your prepared spells.
