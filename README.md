@@ -20,3 +20,9 @@ Just some examples / ideas to get the point across and to help me remember them.
 * A frob to increase the round, which lowers the duration on various conditions.
 * A frob to enable/disable a Barbarian's rage.
 * A frob for your prepared spells.
+
+## Notes
+
+* Tabs and the general outlay are saved in the character DB. Players can customize their sheet if desired.
+* GMs can build their own sheets that contain valuable at-a-glance info for all other sheets they have access to.
+* New characters are created from templates, which contain RPG-system specific things like how defense is calculated.

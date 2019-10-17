@@ -89,8 +89,6 @@ module.exports = {
         }
       }
       console.log("Ending loop");
-      //console.log(subscriptions);
-      //console.log(stats);
     }
 
 
